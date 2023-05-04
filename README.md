@@ -362,3 +362,117 @@ O Exemplo 11 mostra um exemplo de formulário com vários tipos de campos para e
   <input type="submit" value="Enviar" />
 </form>
 ```
+
+![2023-05-04_18h17_10](https://user-images.githubusercontent.com/88487115/236332064-e6d0ec7a-fd3e-45d5-b9b7-f32156dc13c8.png)
+
+<strong> Formatação de texto </strong>
+
+As tags de formatação de texto ajudam a destacar trechos da parte escrita da página, seja para fins de SEO ou por requisitos do conteúdo. Formatações como negrito e itálico podem ser aplicadas com facilidade utilizando as várias tags disponíveis para esse fim:
+
+<ul>
+  <li> <b>b</b> e <b>strong</b> para negrito/texto forte; </li>
+  <li> <i>i</i> e <i>em</i> para itálico/ênfase; </li>
+  <li> <sup>sup</sup> e <sub>sub</sub> para sobrescrito e subscrito, respectivamente; </li>
+  <li> <ins>ins</ins> e <del>del</del> para indicar trechos que foram incluídos ou removidos, respectivamente; </li>
+  <li> <small>small</small> para textos menores que o padrão; </li>
+  <li> <mark>mark</mark> para texto destacado. </li>
+</ul>
+
+Apesar da tag <b>```<b>```</b> e <b>```<strong>```</b> terem resultados visualmente idênticos, eles têm usos diferentes. A tag <b>```<b>```</b> deve ser utilizada quando se quer destacar algo que é apenas visual, como por exemplo, deixar um link com mais visível. A tag <b>```<strong>```</b> por sua vez, além de destacar o visual, dá um destaque semântico ao texto, então se o conteúdo que você quer dar destaque é uma parte relevante do texto, utilize a tag <b>```<strong>```</b>. O mesmo vale para as tags <i>```<i>```</i> e <i>```<em>```</i>, onde a tag <i>```<i>```</i> é utilizada apenas para formatação visual e a tag <i>```<em>```</i> dá ênfase semântica ao texto, não devendo ser utilizada para uso puramente estético.
+  
+No Exemplo 12 vemos exemplos de uso dessas tags, e seu resultado pode ser observado em seguida, na Figura 9.
+  
+<b>Exemplo 12. Tags de formatação de texto</b>
+  
+```
+<p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
+<p>Texto em itálico com <i>italics</i> e <em>emphasis</em>.</p>
+<p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+<p>Texto <ins>inserido</ins> e <del>excluído</del>.</p>
+<p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
+```
+<p>Texto em negrito com <b>bold</b> e <strong>strong</strong>.</p>
+<p>Texto em itálico com <i>italics</i> e <em>emphasis</em>.</p>
+<p>Texto <sup>sobrescrito</sup> e <sub>subscrito</sub>.</p>
+<p>Texto <ins>inserido</ins> e <del>excluído</del>.</p>
+<p>Texto <small>pequeno</small> e <mark>destacado</mark>.</p>
+  
+<b>Áudio no HTML</b>
+  
+Com HTML também é possível inserir áudio e vídeo nas páginas com facilidade. Para áudio, podemos utilizar a tag audio, da mesma forma que apresentada no Exemplo 13.
+
+<b>Exemplo 13. Inserindo áudio</b>
+  
+```
+<audio controls src="musica.mp3" > Seu browser não suporta áudio. </audio>
+```
+
+Na tag audio, o atributo src aponta para o arquivo de áudio que será executado (MP3, OGG ou WAV). Já o atributo controls indica que devem ser exibidos os controles de gerenciamento do áudio (botões play, pause etc.). Além dele, outros também merecem destaque: autoplay, para fazer com que o áudio seja executado assim que for carregado; loop, para que o áudio seja executado repetidas vezes.
+  
+Caso o browser não ofereça suporte a essa tag, o texto contido eu seu interior será exibido.
+  
+Também podemos informar mais de um arquivo de áudio (opções alternativas de formato, por exemplo). Nesse caso, precisamos utilizar a tag source, como no exemplo do Exemplo 14.
+
+<b>Exemplo 14. Inserindo áudio com a tag source</b>
+  
+```
+<audio controls src="musica.mp3">
+  <source src="musica.ogg" type="audio/ogg" />
+  <source src="musica.mp3" type="audio/mpeg" />
+</audio>
+```
+
+![2023-05-04_18h32_28](https://user-images.githubusercontent.com/88487115/236334672-f6162a13-8155-41ae-8061-e6ff729640d1.png)
+
+<b>Video no HTML</b>
+
+Semelhante ao áudio, também podemos inserir vídeos nas páginas HTML utilizando a tag video, adicionada na HTML5, como no exemplo:
+
+```<video src="video.mp4" width="640" height="480" controls> Seu browser não suporta vídeo HTML5. </video>```
+
+Dessa vez, além dos atributos já vistos no áudio, também precisamos informar a largura (width) e a altura (height) do vídeo, a fim de mantê-lo adequado ao layout.
+
+O código abaixo pode ser utilizado quando desejarmos informar mais de um arquivo de vídeo como opções de carregamento, da mesma forma que vimos na tag audio. Nesse caso, os formatos suportados são MP4, WebM e Ogg.
+
+```
+<video width="640" height="480" controls>
+  <source src="video.webm" type="video/webm" />
+  <source src="video.mp4" type="video/mp4" />
+</video>
+```
+
+![2023-05-04_18h36_47](https://user-images.githubusercontent.com/88487115/236335356-b5f96faf-fdc0-4c46-b1bb-87caea56e486.png)
+
+<b>Div e Span no HTML</b>
+
+As tags div e span são duas das mais utilizadas no HTML, com objetivos distintos, porém com grande importância para a composição do layout das páginas e formatação do texto.
+
+As divs são normalmente utilizados para representarem containers para outros elementos, agrupando-os visualmente dentro de um bloco que pode conter dimensões e posição definidas. Por padrão, uma div não possui aparência características visuais definidas, isso precisa ser feito via CSS ao atribuir bordas, cores etc. Sua principal característica, no entanto, é que essa tag representa um elemento do tipo bloco, ou seja, que quando adicionado na página, automaticamente gera uma nova linha no layout (semelhante a um parágrafo), ao invés de ser alocado lateralmente nos demais componentes.
+
+```
+<input type="text" value="input 1">
+<input type="text" value="input 2">
+
+<div>
+  <input type="text" value="input 3">
+</div>
+
+<div>
+  <input type="text" value="input 4">
+</div>
+```
+
+![2023-05-04_18h45_24](https://user-images.githubusercontent.com/88487115/236336774-7c2ce1e3-529c-4c69-8950-09f017607729.png)
+  
+Elementos span, por padrão, também não possuem nenhuma característica visual definida, isso precisa ser feito via CSS para destacar ou aplicar uma formatação especial para um certo trecho do texto. Por exemplo, o código abaixo demonstra o uso do span em dois casos. No primeiro, a tag não conta com nenhum atributo adicional; no segundo, adicionamos a ela uma aparência diferenciada via CSS.
+
+```
+<p>Este é um texto com um <span> trecho sem destaque.</span></p>
+<p>
+  Este é um texto com um
+  <span style="background: #1abc9c; border-radius: 5px; padding: 5px">
+  trecho em destaque.</span>
+</p>
+```
+![image](https://user-images.githubusercontent.com/88487115/236337049-d866b824-0627-4d2f-b0a7-f723a11e8ffd.png)
+  
