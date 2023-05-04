@@ -22,12 +22,12 @@ Formação HTML Web Developer
 
 <ul>
   <li> A declaração <code>&lt;!DOCTYPE html&gt;</code> define este documento como HTML5 </li>
-  <li> O <code>&lt;html&gt;</code> é o elemento raiz de uma página HTML </li>
-  <li> O <code>&lt;head&gt;</code> contém meta informações sobre o documento </li>
-  <li> O <code>&lt;title&gt;</code> especifica um título para o documento </li>
-  <li> O <code>&lt;body&gt;</code> contém o conteúdo da página visível </li>
-  <li> O <code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code> definem cabeçalhos </li>
-  <li> O <code>&lt;p&gt;</code> define um parágrafo </li>
+  <li> <code>&lt;html&gt;</code> é o elemento raiz de uma página HTML </li>
+  <li> <code>&lt;head&gt;</code> contém meta informações sobre o documento </li>
+  <li> <code>&lt;title&gt;</code> especifica um título para o documento </li>
+  <li> <code>&lt;body&gt;</code> contém o conteúdo da página visível </li>
+  <li> <code>&lt;h1&gt;</code> ~ <code>&lt;h6&gt;</code> definem cabeçalhos </li>
+  <li> <code>&lt;p&gt;</code> define um parágrafo </li>
 </ul>
 
 <strong> Tags em HTML </strong>
