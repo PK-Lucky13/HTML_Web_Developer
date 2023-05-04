@@ -235,3 +235,130 @@ O próximo exemplo traz uma tabela mais complexa, utilizando todas as tags. Seu 
 
 Por padrão, as tabelas não possuem bordas. Isso deve ser adicionado por meio das CSS.
 
+<strong> Listas no HTML </strong>
+
+Listas são elementos úteis para organizar e ordenar itens que estão relacionados de alguma forma. No HTML é possível criar três tipos de listas:
+
+<ul>
+  <li> ordenadas (com a tag <strong>ol</strong>) </li>
+  <li> não ordenadas (com a tag <strong>ul</strong>) </li>
+  <li> de definição (por meio da tag <strong>dl</strong>) </li>
+</ul>
+
+
+No Exemplo 8 temos um exemplo de lista ordenada, enquanto o Exemplo 9 traz um exemplo de lista não ordenada. Em seguida, a Figura 6 mostra o resultado dos dois códigos. Observe que cada item das primeiras listas é definido pela tag li.
+
+<strong> Exemplo 8. Lista ordenada </strong>
+
+```
+<ol>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+<strong> Exemplo 9. Lista não ordenada </strong>
+
+```
+<ul>
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ul>
+```
+
+<strong> Figura 6. Listas ordenada e não ordenada </strong>
+
+<table>
+  <tr>
+    <td>
+      <ol>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ol>
+    </td>
+    <td>
+      <ul>
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+No caso das listas ordenadas temos o atributo type que permite especificar o tipo de marcador a ser usado: números (padrão), números romanos ou letras.
+
+<strong>Exemplo 8.1. Lista ordenada por número romano maiúsculo</strong>
+
+```
+<ol type="I">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+```
+
+<ol type="I">
+  <li>Item 1</li>
+  <li>Item 2</li>
+  <li>Item 3</li>
+</ol>
+
+Os valores permitidos para esse atributo são:
+
+<ul>
+  <li> 1 - números (padrão) </li>
+  <li> i - números romanos minúsculos </li>
+  <li> I - números romanos maiúsculos </li>
+  <li> a - letras minúsculas </li>
+  <li> A - letras maiúsculas </li>
+</ul>
+
+As listas de definição têm um comportamento um pouco diferente, uma vez que cada item é composto por um título (dt) e uma definição (dd), semelhante ao que ocorre em dicionários, nos quais temos os verbetes e suas definições.
+
+```
+<dl>
+
+  <dt>Título 1</dt>
+  <dd>Definição 1</dd>
+
+  <dt>Título 2</dt>
+  <dd>Definição 2</dd>
+
+  <dt>Título 3</dt>
+  <dd>Definição 3</dd>
+
+</dl>
+```
+
+<dl>
+  <dt>Título 1</dt>
+  <dd>Definição 1</dd>
+  <dt>Título 2</dt>
+  <dd>Definição 2</dd>
+  <dt>Título 3</dt>
+  <dd>Definição 3</dd>
+</dl>
+
+<strong> Formulários no HTML </strong>
+
+Formulários são normalmente utilizados para integrar a página HTML a algum processamento no lado servidor. Nesses casos, a página envia dados para uma aplicação (Java, PHP, .NET etc.), que os recebe, trata e retorna algum resultado.
+
+No HTML, geralmente usamos a tag form para delimitar a área na qual se encontram os campos a serem preenchidos pelo usuário, a fim de serem enviados para processamento no back-end (enquanto a página HTML é chamada de front-end da aplicação).
+
+O Exemplo 11 mostra um exemplo de formulário com vários tipos de campos para entrada de dados e um botão para submetê-los ao servidor. Na Figura 8 vemos seu resultado.
+
+<strong>Exemplo 11. Formulário com campos</strong>
+
+```
+<form action="salvar_dados.php" method="post">
+  <input type="text" placeholder="Digite aqui" /> <br/>
+  <input type="checkbox" />Checkbox <br/>
+  <input type="radio" />Radio button <br/>
+  <input type="range" /> <br/>
+  <input type="submit" value="Enviar" />
+</form>
+```
