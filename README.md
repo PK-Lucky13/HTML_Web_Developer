@@ -323,12 +323,13 @@ O Exemplo 11 mostra um exemplo de formulário com vários tipos de campos para e
 <p><b>Exemplo 11. Formulário com campos</b></p>
 <pre>
   <code>
-  &lt;form action="salvar_dados.php" method="post">
+  &lt;form name="test" onsubmit="alert('Enviado')" method="POST" autocomplete="on" target="_blank" action="data_base.php">
     &lt;input type="text" placeholder="Digite aqui" /> &lt;br/>
     &lt;input type="checkbox" />Checkbox &lt;br/>
     &lt;input type="radio" />Radio button &lt;br/>
     &lt;input type="range" /> &lt;br/>
     &lt;input type="submit" value="Enviar" />
+    &lt;button type="submit" title="Clique para enviar">Enviar&lt;/button>
   &lt;/form>
   </code>
 </pre>
