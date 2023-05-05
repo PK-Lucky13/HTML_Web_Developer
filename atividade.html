@@ -6,11 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projeto</title>
 </head>
-<script>
-  function mensagem() {
-    alert("Enviado");
-  }
-</script>
 <body>
   <a id="indice"><h1>HTML Web Developer</h1></a>
   <hr />
@@ -351,12 +346,13 @@ O Exemplo 11 mostra um exemplo de formulário com vários tipos de campos para e
   </code>
 </pre>
 <p>Saída:</p>
-<form action="" method="">
+<form name="test" onsubmit="alert('Enviado')" method="POST" autocomplete="on" target="_blank" action="data_base.php">
   <input type="text" placeholder="Digite aqui" /> <br/>
   <input type="checkbox" />Checkbox <br/>
   <input type="radio" />Radio button <br/>
   <input type="range" /> <br/>
-  <input type="submit" value="Enviar" onclick="mensagem()"/>
+  <input type="submit" value="Enviar"/>
+  <button type="submit" title="Clique para enviar">Enviar</button>
 </form>
 <br>
 <hr>
