@@ -380,6 +380,8 @@ No Exemplo 12 vemos exemplos de uso dessas tags, e seu resultado pode ser observ
 
 ![2023-05-04_18h32_28](https://user-images.githubusercontent.com/88487115/236477450-5bbd306d-50cd-46c5-8d16-6e5a361b1c85.png)
 
+[⏯️ 🔊](https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/preview)
+
 <h3><a id="video"> Video no HTML </a><small><sup><a href="#indice">Índice</a></sup></small></h3>
 <p>Semelhante ao áudio, também podemos inserir vídeos nas páginas HTML utilizando a tag video, adicionada na HTML5, como no exemplo:</p>
 <pre>
