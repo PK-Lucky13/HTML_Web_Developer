@@ -380,11 +380,12 @@ No Exemplo 12 vemos exemplos de uso dessas tags, e seu resultado pode ser observ
 
 ![2023-05-04_18h32_28](https://user-images.githubusercontent.com/88487115/236477450-5bbd306d-50cd-46c5-8d16-6e5a361b1c85.png)
 
-<a href="https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/view" target="_blank">⏯️ 🔊</a>
+<a href="https://drive.google.com/file/u/0/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/view" target="_blank">⏯️ 🔊</a>
+
+[⏯️ 🔊](https://drive.google.com/file/u/0/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/view)
 
 [⏯️ 🔊](https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/preview)
 
-[⏯️ 🔊](https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/view)
 
 
 <h3><a id="video"> Video no HTML </a><small><sup><a href="#indice">Índice</a></sup></small></h3>
