@@ -399,7 +399,7 @@ No Exemplo 12 vemos exemplos de uso dessas tags, e seu resultado pode ser observ
 </pre>
 <p>Saída:</p>
 
-![2023-05-04_18h36_47](https://user-images.githubusercontent.com/88487115/236478973-2223d32c-7157-44d4-94c9-9a8d3d5b3a4e.png)
+[DARK VALLEY (FREE VJ LOOP) (1080p).webm](https://user-images.githubusercontent.com/88487115/236593683-9e16021b-78b9-4073-ab89-38a008d327e0.webm)
 
 <br><br>
 <hr>
