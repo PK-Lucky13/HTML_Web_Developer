@@ -380,7 +380,7 @@ No Exemplo 12 vemos exemplos de uso dessas tags, e seu resultado pode ser observ
 
 ![2023-05-04_18h32_28](https://user-images.githubusercontent.com/88487115/236477450-5bbd306d-50cd-46c5-8d16-6e5a361b1c85.png)
 
-<a href="https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/preview" rel="noopener" target="_blank">⏯️ 🔊</a>
+[⏯️ 🔊](https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/preview) {:target="_blank" rel="noopener"}
 
 [⏯️ 🔊](https://drive.google.com/file/d/1q3lXEKCL2_9TlePrwT3dO0lZyFPnMZ0e/preview) ← (crtl + click)
 
