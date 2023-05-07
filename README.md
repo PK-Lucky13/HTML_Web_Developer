@@ -203,18 +203,18 @@ Projeto -> https://github.com/PK-Lucky13/HTML_Web_Developer/blob/main/atividade.
     <tr>
       <td>Feijão</td>
       <td>R$ 8,75</td>
-      <td>........1</td>
+      <td align="center">1</td>
     </tr>
     <tr>
       <td>Arroz</td>
       <td>R$ 4,99</td>
-      <td>........2</td>
+      <td align="center">2</td>
     </tr>
   </tbody>
   <tfoot>
     <tr>
       <td>Total</td>
-      <td>=></td>
+      <td align="center">=></td>
       <td>R$ 18,73</td>
     </tr>
   </tfoot>
