@@ -45,6 +45,7 @@ body {
   background-color: white;
   min-height: 300px;
   padding: 20px;
+  min-height: 465px;
 }
 .footer {
   background-color: #bcbcbd;
