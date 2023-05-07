@@ -33,7 +33,27 @@
                 </ul><br>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3705.6804194596307!2d-43.35499178505495!3d-21.75391188561005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x989dac9842425b%3A0x6246f00ab3683754!2sCl%C3%ADnica%20Veterin%C3%A1ria%20Popular%20Jf%20Centro!5e0!3m2!1spt-BR!2sbr!4v1683484433354!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 <br><br>
-                <img width="100" src="https://cdn-icons-png.flaticon.com/512/53/53086.png" type="png"/>
+                
+                
+                <form name="contato" method="POST" autocomplete="on" target="_self" action="#">
+                    <fieldset>
+                        <legend>DADOS DE CONTATO</legend>
+                        <br>
+                        <label>NOME</label><input type="text" placeholder="Digite seu primeiro nome"/>
+                        <label>SOBRENOME</label><input type="text" placeholder="Digite seu sobrenome"/><br>
+                        <label>E-MAIL</label><input type="email" placeholder="Digite seu e-mail"/>
+                        <label>TELEFONE</label><input type="email" placeholder="(DDD) 9XXXX-XXXX"/><br><br>
+                        <label>ASSUNTO</label><input id="assunto" type="text" placeholder="Informe qual o assunto gostaria de tratar"/><br><br>
+                        <label></label><textarea name="message" placeholder="Digite sua mensagem aqui..."></textarea><br>
+                        <label></label><input type="file" multiple />
+                        <img type="png" width="50" style="margin-left: 245px;" src="https://cdn-icons-png.flaticon.com/512/784/784082.png"/>
+                    </fieldset>
+                    <br>
+                    <button type="button" onclick="alert('Enviado!')">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+                <br>
+                <img width="100" align="right" src="https://cdn-icons-png.flaticon.com/512/53/53086.png" type="png"/><br>
             </div>
             <div class="footer">
                 <br>
