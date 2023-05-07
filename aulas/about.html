@@ -1,0 +1,162 @@
+<html>
+  <head>
+    <title>Sobre</title>
+  </head>
+  <style>
+    body {
+      background-color: black;
+      color: white
+    }
+    .row{
+      margin: 5px;
+    }
+    .tabela{
+      background-color: white;
+      color: black;
+    }
+    .tabela h2 {
+      font-size: 30px;
+    }
+    label{
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      padding-right: 5px;
+    }
+    fieldset{
+      width: 700px;
+      display: inline-block;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      padding-right: 5px;
+    }
+    h3{
+      margin-left: 5px;
+    }
+    table{
+      color: black;
+      border: solid 1px whitesmoke;
+      width: 200px;
+      margin: auto;
+      -webkit-box-shadow: 5px 8px 5px 5px rgba(0,0,0,0.24); 
+      box-shadow: 5px 8px 5px 5px rgba(0,0,0,0.24);
+    }
+    table thead th {
+      background-color: black;
+      color: white;
+    }
+    table tr:nth-child(even) td{
+      background-color: f1f1f1;
+    }
+    table tr:hover td{
+      background-color: dodgerblue;
+      cursor: pointer;
+    }
+    table tfoot td {
+      background-color: lightgray;
+      text-align: center;
+    }
+  </style>
+  <body>
+    <div id="cabecalho">
+      <h1>Bem vindo!</h1>
+      <a href="index.html" title="Clique aqui e confira" target="_self" rel="noopener">Voltar</a>
+    </div>
+    <div id="menu-lateral">
+      <div id="links">
+        <ul>
+          <li><a href="#"></a>link 1</li>
+          <li><a href="#"></a>link 2</li>
+          <li><a href="#"></a>link 3</li>
+        </ul>
+      </div>
+    </div>
+    <p>Este é um texto com um 
+      <span style="background: #1abc9c; border-radius: 5px; padding: 5px">trecho em destaque.</span>
+    </p>
+    <hr>
+<!----->
+    <h3>FORMULÁRIO</h3>
+    <fieldset>
+      <legend>Dados Pessoais</legend>
+      <div class="row">
+          <label>Nome:</label><input type="text"/>
+          <label>e-mail:</label><input type="text"/>
+      </div>
+      <div class="row">
+          <label>Telefone:</label><input type="text"/>
+          <label>Endereço:</label><input type="text"/>
+      </div>
+    </fieldset> 
+    <fieldset>
+      <legend>Dados Profissionais</legend>
+      <div class="row">
+          <label>Formação:</label><input type="text"/>
+          <label>Profissão:</label><input type="text"/>
+      </div>
+    </fieldset>
+      <div class="row">
+        <button type="reset">
+          Limpar
+        </button>
+        <button type="submit">
+          Enviar
+        </button>
+      </div>
+
+      <iframe src="https://dio.me" width="500" height="500"></iframe>
+      <br><br>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d60014.066109917076!2d-43.9812096!3d-19.9294976!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1683376871134!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+      <div class="tabela">
+        <hr><br>
+        <h2 align="center">TRABALHANDO COM TABELAS</h2>
+  <!--  <table summary="Tabela de idades" border="1" width="125" cellspacing="3" cellpadding="5"> <---TABELA-->
+        <table summary="Tabela de idades" cellspacing="0" cellpadding="5">
+          <caption>Tabela de idades</caption>
+  <!--  rowspan="2" <- mescla colunas / colspan="2" <- mescla linhas  -->
+          <thead>
+            <tr>
+              <th colspan="2">TABELA</th>
+            </tr>
+            <tr> <!---LINHA-->
+              <th title="Nome">Nome</td> <!---COLUNA-->
+              <th title="Idade">idade</td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr id="1">
+              <td>Raphael</td>
+              <td align="center">25</td>
+            </tr>
+            <tr id="2">
+              <td>Satoshi</td>
+              <td align="center">14</td>
+            </tr>
+            <tr id="3">
+              <td>Nakamoto</td>
+              <td align="center">14</td>
+            </tr>
+            <tr id="4">
+              <td>Elon</td>
+              <td align="center">51</td>
+            </tr>
+            <tr id="5">
+              <td>Musk</td>
+              <td align="center">51</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <td>5 nomes</td>
+              <td>155</td>
+            </tr>
+          </tfoot>
+        </table>
+      <br><hr>
+<!--  <canvas id="idCanvas" width="200" height="100" style="border:1px solid #c3c3c3;">-->
+      </div>
+      <br><br>
+
+  </body>
+</html>
