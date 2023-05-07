@@ -12,7 +12,7 @@ body {
   width: 1200px;
   display: flex;
   margin: 0 auto;
-  background-color: aquamarine;
+  background-color: white;
 }
 .main {
   display: flex;
@@ -72,4 +72,28 @@ table tr:hover td{
 table tfoot td {
   background-color: lightgray;
   text-align: center;
+}
+fieldset{
+  width: 700px;
+  display: inline-block;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  padding-right: 5px;
+}
+label{
+  width: 100px;
+  display: inline-block;
+  text-align: right;
+  padding-right: 5px;
+}
+input#assunto{
+  width: 455px;
+}
+textarea{
+  resize: none;
+  width: 455px;
+  min-height: 100px;
+}
+form button{
+  cursor: pointer;
 }
