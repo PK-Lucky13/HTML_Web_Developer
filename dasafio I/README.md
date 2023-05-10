@@ -1,6 +1,5 @@
 <h1> HTML Web Developer </h1>
 <p>Formação HTML Web Developer<br>
-Projeto -> https://github.com/PK-Lucky13/HTML_Web_Developer/blob/main/atividade.html</p>
   <h2><b><a id="indice">Índice</a></b></h2>
   <ol>
     <li><a href="#tags">Tags em HTML</a></li>
