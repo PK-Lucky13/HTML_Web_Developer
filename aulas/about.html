@@ -3,7 +3,7 @@
     <title>Sobre</title>
   </head>
   <style>
-    body {
+    body{
       background-color: black;
       color: white
     }
@@ -77,32 +77,34 @@
     <hr>
 <!----->
     <h3>FORMULÁRIO</h3>
-    <fieldset>
-      <legend>Dados Pessoais</legend>
+    <form action="#" method="get" id="form">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label><input autofocus placeholder="Digite seu nome completo" type="text"/>
+            <label>e-mail:</label><input placeholder="Ex: meuemail@e-mail.com" type="email"/>
+        </div>
+        <div class="row">
+            <label>Telefone:</label><input placeholder="(DDD) 9 XXXX-XXXX" type="tel"/>
+            <label>Endereço:</label><input placeholder="Seu endereço completo" type="text"/>
+        </div>
+      </fieldset> 
+      <fieldset>
+        <legend>Dados Profissionais</legend>
+        <div class="row">
+            <label>Formação:</label><input placeholder="Grau de formação" type="text"/>
+            <label>Profissão:</label><input placeholder="Profissão" type="text"/>
+        </div>
+      </fieldset>
       <div class="row">
-          <label>Nome:</label><input type="text"/>
-          <label>e-mail:</label><input type="text"/>
       </div>
-      <div class="row">
-          <label>Telefone:</label><input type="text"/>
-          <label>Endereço:</label><input type="text"/>
-      </div>
-    </fieldset> 
-    <fieldset>
-      <legend>Dados Profissionais</legend>
-      <div class="row">
-          <label>Formação:</label><input type="text"/>
-          <label>Profissão:</label><input type="text"/>
-      </div>
-    </fieldset>
-      <div class="row">
-        <button type="reset">
-          Limpar
-        </button>
-        <button type="submit">
-          Enviar
-        </button>
-      </div>
+      <button type="reset">
+        Limpar
+      </button>
+      <button type="button" onclick="alert('OK!')">
+        Enviar
+      </button>
+    </form>
 
       <iframe src="https://dio.me" width="500" height="500"></iframe>
       <br><br>

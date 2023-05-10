@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Início</title>
+      <style>
+        html, body{
+          background-color: black;
+          color: white;
+          font-family: Arial, Helvetica, sans-serif;
+          margin: 0%;
+          margin-left: 3px;
+          margin-right: 2px;
+        }
+        blockquote {
+          background-color: #ff9900;
+          font-weight: bold;
+          padding: 10px;
+          margin-left: 10px;
+          margin-right: 900px;
+          border-left: white 15px;
+        }
+        article time{
+          font-style: italic;
+        }
+        article q{
+          font-style: italic;
+        }
+        kbd{
+          border: solid 1px white;
+        padding: 2px;
+      }
+      code, pre{
+        background-color: white;
+        color: black;
+        padding: 3px;
+      }
+      pre{
+        background-color: white;
+        color: black;
+        padding: 3px;
+        padding-left: 10px;
+      }
+      footer{
+        background-color: #ff9900;
+        padding: 3px;
+      }
+      pre > p{
+        color: gray;
+        font-style: italic;
+      }
+      details > p{
+        border: solid 1px white;
+        padding: 5px;
+        width: fit-content;
+        margin-left: 20px;
+      }
+      canvas {
+        background-color: #f1f1f1;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+    </header>
+    <main>
+      <article>
+        <h1>BITCOIN</h1>
+        <p> Artigo publicado em <time pubdate> 01/03/2009 - 19:00</time> </p>
+        <p>Segundo todo o mundo, <q cite="https://bitcoin.org"> Este é o melhor investimento que já fizeram!</q></p>
+        <blockquote cite="https://bitcoin.org">
+          <p>Blockchain - A new era</p>
+          <p>Bitcoin - In Bitcoin we trust</p>
+          <p>Satoshi Nakamoto - The genius of the century</p>
+        </blockquote>
+        <p>Crypto is freedom</p>
+      </article>
+    </main>
+    <br><hr><br>
+    <h2>IMAGES</h2>
+      <figure> <!--ACESSIBILIDADE-->
+        <img src="https://cdn.dribbble.com/users/87334/screenshots/15263338/media/324d96989f199eb24ba283aaa96625fb.jpg?compress=1&resize=700x525&vertical=top"/>
+        <figcaption>BITCOIN</figcaption>
+      </figure><br>
+    <picture> <!--ÚTIL -> troca a imagem de acordo com o tamanho (largura) da tela
+            carrega imagens diferentes de acordo com a resolução do dispositivo-->
+      <source srcset="https://cdn.dribbble.com/users/87334/screenshots/15263019/media/e1d4092bed3125481bc7a8ffef9f2042.jpg?compress=1&resize=700x525&vertical=top" media="(min-width: 550px)"/>
+      <img src="https://cdn.dribbble.com/users/2030359/screenshots/15273544/media/a6a32af5963ac64e57d21e0d6c8ff477.png?compress=1&resize=700x525&vertical=top"/>
+    </picture>
+    <br><hr>
+    <select name="browsers">
+      <option value="">Selecione um navegador</option>
+      <option value="chrome">Google Chrome</option>
+      <option value="firefox">Mozilla Firefox</option>
+      <option value="edge">MS Edge</option>
+      <option value="safari">iOS Safari</option>
+      <option value="opera">Web Opera </option>
+      <option value="Brave">Brave Browser</option>
+    </select>
+    <br><hr>
+    <input list="browsers" type="search" name="search"/>
+    <datalist id="browsers">
+      <option>Google Chrome</option>
+      <option>Mozilla Firefox</option>
+      <option>MS Edge</option>
+      <option>iOS Safari</option>
+      <option>Web Opera </option>
+      <option>Brave Browser</option>
+    </datalist>
+    <br><hr>
+    <p>Para copiar esta informação, pressione <kbd>CRTL</kbd> + <kbd>C</kbd></p>
+    <p>Para trocar o fundo de um elemento, utilize o comando <code>background-color</code></p>
+    <p>Comando completo para alterar cor de fundo:</p>
+    <pre>
+      <p>//Cor de fundo branca</p>
+      code{
+        background-color: white;
+      }
+    </pre>
+    <br><hr>
+    <h2>RECURSOS ESPECIAIS</h2>
+    <br>
+    <details>
+      <summary>Lista</summary>
+      <p><a href="https://google.com">Google</a><br>Item 2<br>Item 3</p>
+    </details>
+    <br><hr><br>
+    <meter max="100" min="0" value="50"></meter> <!-- MEDIDOR - EXEMPLO: 'QUANTO ESPAÇO TEM NO DISCO?'' = 50%-->
+    <progress id="progress" max="100" min="0" value="0">
+    </progress> <!-- MEDIR O PROGRESSO / CARREGAMENTO - ENQUANTO ESTIVER CARREGANDO-->
+    <script>
+      var progress = document.getElementById('progress');
+      const interval = setInterval(() => {
+        progress.value += 10;
+        if (progress.value >= 100) {
+            //alert('Carregamento realizado com sucesso!')
+            clearInterval(interval);
+        }
+      }, 1000);
+    </script>
+    <article>
+    <h2>DOM (DOCUMENT OBJECT MODEL) </h2>
+      <input placeholder="Busca..." type="text" id="busca"><br><!-- input autofocus-->
+      <p id="descricao">Em 3 de janeiro de 2009, Satoshi Nakamoto minerou o primeiro bloco de emissão da criptomoeda.
+      <q cite="https://www.blockchain.com/explorer/blocks/btc/000000000019d6689c085ae165831e934ff763ae46a2a6c172b3f1b60a8ce26f">The Times 03/Jan/2009 Chancellor on brink of second bailout for banks</q>.</p>
+      <blockquote cite="https://panoramacrypto.com.br/primeira-mineracao-de-bitcoin-completa-14-anos/#:~:text=Al%C3%A9m%20do%20registro%20online%2C%20a,03%20de%20janeiro%20de%202009.">
+        <p>3 de janeiro é um marco histórico para o mundo dos criptoativos. Neste mesmo dia, em 2009, o enigmático e anônimo Satoshi Nakamoto minerou o primeiro bloco de emissão de bitcoin. Quer dizer, o bloco foi codificado no software do protocolo na blokchchain, e passou a valer.</p>
+      </blockquote>
+      <img src="https://panoramacrypto.com.br/wp-content/uploads/2023/01/primeira-mineracao.png" alt="The Times - 03/01/2009"/>
+      <p><q cite="https://bitcointalk.org/">The Times Journal</q> - <time pubdate>03/01/2009</time></p>
+    </article>
+    <script>
+      // id="" <- usado para o JS 'linkar' o campo que irá manipular
+      var searchField = document.getElementById('busca');
+      var descriptionObject = document.getElementById('descricao');
+      var textToSearch = descriptionObject.innerHTML;
+        function realizaBusca(busca){
+          const regex = new RegExp(`(${busca})(?!(.(?!<mark>))*</mark>)+`, 'ig');
+          const ocurrences = textToSearch.match(regex);
+          descriptionObject.innerHTML = textToSearch.replace(regex, `<mark>${busca}</mark>`);
+        }
+        searchField.addEventListener('keyup', (e) => realizaBusca(e.target.value));
+    </script>
+    <hr>
+    <h2>CANVAS I</h2>
+    <canvas id="myCanvas" width="200" height="100">
+    </canvas>
+    <script>
+      var c = document.getElementById('myCanvas');
+      var ctx = c.getContext('2d');
+      //ctx.moveTo(20, 50); <- linha
+      //ctx.lineTo(100, 100); <- linha
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2* Math.PI)
+      ctx.stroke();
+    </script><br><br><hr>
+
+
+
+
+    <br><a href="form.html" target="_self" rel="noopener">FORMULÁRIO</a>
+      <br><br>
+      <footer>
+        <p>#Bitcoin</p>
+      </footer>
+  </body>
+</html>

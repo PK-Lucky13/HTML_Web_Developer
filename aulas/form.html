@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FORMULÁRIO</title>
+  <style>
+    body {
+      background-color: black;
+      color: white
+    }
+    .row{
+      margin: 5px;
+    }
+    fieldset{
+      width: 700px;
+      display: inline-block;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      padding-right: 5px;
+    }
+    label{
+      width: 100px;
+      display: inline-block;
+      text-align: right;
+      padding-right: 5px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>NOVOS ATRIBUTOS</h1>
+    <form action="" method="get" id="form">
+      <fieldset>
+        <legend>DADOS PESSOAIS</legend>
+        <div class="row">
+          <label for="name">Nome:</label><input minlength="2" id="name" name="name" autofocus required placeholder="Nome completo" type="text">
+          <label for="address">Endereço:</label><input minlength="2" id="address" name="address" required placeholder="Seu endereço completo" type="text"/>
+        </div>
+        <div class="row">
+          <label for="phone">Telefone:</label><input minlength="11" maxlength="12" id="phone" name="phone" required placeholder="(DDD) 9 XXXX-XXXX" type="number"/>
+          <label for="email">e-mail:</label><input id="email" name="email" required placeholder="Ex: meuemail@e-mail.com" type="email"/></label>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>OBSERVAÇÕES</legend>
+        <textarea minlength="3" maxlength="140" name="observation" id="observation" cols="90" rows="5" placeholder="Opcional..."></textarea>
+      </fieldset>
+      <button type="submit">OK</button>
+      <button type="reset">RESET</button>
+    </form>
+    <br><br>
+    <form action="" method="get" id="formII"></form>
+    <label for="nameII">Nome:</label><input form="formII" minlength="2" id="nameII" name="nameII" autofocus required placeholder="Nome completo" type="text">
+    <label for="addressII">Endereço:</label><input form="formII" minlength="2" id="addressII" name="addressII" required placeholder="Seu endereço completo" type="text"/>
+    <br><br><button type="submit" form="formII">OK</button>
+    <button type="reset" form="formII">RESET</button>
+  </main>
+  <footer>
+    <br><br><a href="index_II.html" target="_self" rel="noopener">Voltar</a>
+  </footer>
+</body>
+</html>
