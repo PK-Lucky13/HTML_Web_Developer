@@ -1,0 +1,264 @@
+body,
+html {
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.logo {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: left;
+  align-items: left;
+}
+ul {
+  list-style: none;
+  padding-left: 5px;
+}
+a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+ul a:hover {
+  text-decoration: underline;
+  color: #ff9900;
+}
+
+.bar {
+  background-color: #0c0c0c;
+  padding: 15px;
+  border-top: solid 1px #cdcdcd;
+  border-bottom: solid 1px #cdcdcd;
+}
+.content {
+  max-width: 1440px;
+  margin: auto;
+  grid-gap: 3rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-areas: 'sidebar main anchors';
+  grid-template-columns: minmax(0, 15rem) minmax(0, 2.5fr) minmax(0, 15rem);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.footer {
+  min-height: 100px;
+  border-top: solid 1px #cdcdcd;
+}
+.anchors {
+  border-left: solid 1px #cdcdcd;
+  padding-left: 15px;
+}
+.sidebar {
+  border-right: solid 1px #cdcdcd;
+}
+figure {
+  margin-left: 15px;
+}
+blockquote {
+  color: whitesmoke;
+  background-color: #353636;
+  border-left-color: rgb(234, 236, 240);
+  border-left-style: solid;
+  border-left-width: 4px;
+  display: block;
+  margin-right: 50px;
+}
+blockquote > p {
+  padding: 10px;
+  margin-left: 10px;
+}
+
+::selection {
+  background-color: white;
+  color: black;
+}
+:hover > h1 > a {
+  background-color: #ff9900;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 0px;
+  padding-bottom: 3px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  font-style: italic;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+:hover > h1 > a::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  animation: loadLine 1s linear forwards, fadeOut 0.5s linear forwards;
+}
+
+@keyframes loadLine {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.history:hover > h2 > a {
+  background-color: #ff9900;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.creation:hover > h3 > a {
+  background-color: #ff9900;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+section:hover > h4 > a {
+  background-color: #ff9900;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+h2,
+h3,
+h4 {
+  cursor: default;
+}
+footer > figure > img {
+  padding-top: 5px;
+  padding-left: 0px;
+}
+
+.sidebar:hover h2 {
+  background-color: #ff9900;
+  padding-left: 5px;
+  margin-right: 100px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+.anchors:hover h2 {
+  background-color: #ff9900;
+  padding-left: 5px;
+  margin-right: 135px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  font-style: italic;
+  border-radius: 10px;
+}
+
+.technicalInformation:hover h2 {
+  background-color: #ff9900;
+  padding-left: 5px;
+  margin-right: 570px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.technicalInformation:hover > h3 > a {
+  font-style: italic;
+}
+
+.blockchain:hover > h3 > a {
+  background-color: #ff9900;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 3px;
+  padding-bottom: 5px;
+  color: white;
+  text-decoration: none;
+  cursor: default;
+  border-radius: 10px;
+  font-style: italic;
+}
+
+.sidebar details ul {
+  display: none;
+}
+
+.sidebar:hover details ul {
+  color: #ff9900;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+summary {
+  list-style-type: '';
+}
+
+details[open] summary {
+  list-style-type: '';
+}
+
+.anchors ul {
+  display: none;
+}
+
+.anchors:hover ul {
+  color: #ff9900;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+.unidades {
+  list-style-type: initial;
+  color: white;
+}
+
+aside a:active {
+  animation: highlight 0.3s;
+}
+
+@keyframes highlight {
+  0% {
+    background-color: white;
+  }
+  100% {
+    background-color: transparent;
+  }
+}
